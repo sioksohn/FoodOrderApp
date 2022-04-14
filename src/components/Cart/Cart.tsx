@@ -11,10 +11,10 @@ const Cart = (props: { onClose: () => void }) => {
   const hasItems = cartCtx.items.length > 0;
 
   const cartItemRemoveHandler = (id: string) => {
-    console.log(id);
+    cartCtx.removeItem(id);
   };
   const cartItemAddHandler = (item: Item) => {
-    console.log(item);
+    cartCtx.addItem({...item, amount: 1});
   };
 
   const cartItems = (
