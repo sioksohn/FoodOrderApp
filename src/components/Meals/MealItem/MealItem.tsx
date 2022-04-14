@@ -4,8 +4,8 @@ import classes from "./MealItem.module.css";
 interface MealProps {
   id: string;
   name: string;
-  price: number;
   description: string;
+  price: number;
 }
 
 const MealItem = (props: MealProps) => {
